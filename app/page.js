@@ -8,7 +8,6 @@ import {
   Sparkles,
   RefreshCw,
   Trophy,
-  Shield,
   Flame,
   Compass
 } from 'lucide-react'
@@ -19,7 +18,7 @@ export default function SatitPrepApp() {
   const [questions, setQuestions] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [simonInput, setSimonInput] = useState([])
-  const [feedback, setFeedback] = useState(null) // 'success' | 'wrong' | null
+  const [feedback, setFeedback] = useState(null)
 
   useEffect(() => {
     const savedStars = localStorage.getItem('satit_hero_stars')
@@ -71,7 +70,7 @@ export default function SatitPrepApp() {
           setCurrentIndex(nextIdx)
           speak(questions[nextIdx].audioText)
         } else {
-          speak('ภารกิจเสร็จสิ้น! คุณได้รับยศนักผจญภัย!')
+          speak('ยินดีด้วยครับ ผ่านด่านขุมทรัพย์แล้ว!')
           setCurrentCategory(null)
         }
       }, 1800)
@@ -106,12 +105,9 @@ export default function SatitPrepApp() {
   const expProgress = (stars % 5) * 20
 
   return (
-    <div className="min-h-screen bg-[#111625] text-white font-sans p-4 sm:p-8 flex flex-col items-center justify-center select-none relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#0f172a] to-black">
-      {/* 🔮 BACKGROUND PARTICLES EFFECT */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px]" />
-
-      {/* 🛡️ GAMING HUD HEADER */}
-      <header className="w-full max-w-4xl bg-slate-900/80 backdrop-blur-md border-2 border-slate-700/80 rounded-2xl p-4 mb-6 shadow-[0_0_25px_rgba(0,0,0,0.5)] flex flex-wrap justify-between items-center gap-4 relative z-10">
+    <div className="min-h-screen bg-emerald-500 font-sans p-4 sm:p-8 flex flex-col items-center select-none bg-[radial-gradient(#4ad395_2px,transparent_2px)] [background-size:20px_20px]">
+      {/* 🎮 TOP HUD BAR */}
+      <header className="w-full max-w-4xl bg-stone-800 border-4 border-b-8 border-stone-900 rounded-3xl p-4 mb-6 shadow-2xl flex flex-wrap justify-between items-center gap-4">
         <div className="flex items-center gap-3">
           {currentCategory ? (
             <button
@@ -119,111 +115,111 @@ export default function SatitPrepApp() {
                 window.speechSynthesis.cancel()
                 setCurrentCategory(null)
               }}
-              className="p-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-xl transition shadow-lg active:scale-95"
+              className="p-3 bg-amber-500 hover:bg-amber-400 border-b-4 border-amber-700 rounded-2xl transition shadow-md active:translate-y-1 active:border-b-0"
             >
-              <Home className="w-6 h-6 text-sky-400" />
+              <Home className="w-6 h-6 text-white" />
             </button>
           ) : (
-            <div className="p-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl">
-              <Compass className="w-6 h-6 text-emerald-400 animate-spin-slow" />
+            <div className="p-3 bg-emerald-500/20 border border-emerald-500/40 rounded-2xl">
+              <Compass className="w-6 h-6 text-emerald-400" />
             </div>
           )}
           <div>
-            <h1 className="text-xl sm:text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-sky-300 to-indigo-400 tracking-wider flex items-center gap-2">
+            <h1 className="text-2xl sm:text-3xl font-black text-amber-400 tracking-wide drop-shadow-[0_2px_0_#000]">
               SATIT CRAFT{' '}
-              <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              <span className="text-xs px-2 py-1 rounded-lg bg-emerald-500 text-stone-900 font-black">
                 PRO
               </span>
             </h1>
-            <p className="text-xs text-slate-400 font-medium">
-              แอปพลิเคชันเตรียมพร้อม ป.1
+            <p className="text-xs text-stone-300 font-medium">
+              แอปเตรียมพร้อม ป.1 สนุกทุกวัน
             </p>
           </div>
         </div>
 
-        {/* EXP BAR & LEVEL HUD */}
-        <div className="flex items-center gap-4 bg-slate-950/80 px-4 py-2 rounded-xl border border-slate-800">
+        {/* EXP & STAR COUNTER */}
+        <div className="flex items-center gap-4 bg-stone-950 px-5 py-2.5 rounded-2xl border-2 border-stone-700">
           <div className="flex flex-col items-end">
-            <span className="text-xs font-bold text-amber-400 flex items-center gap-1">
-              <Flame className="w-3.5 h-3.5 fill-amber-400" /> LEVEL {level}
+            <span className="text-xs font-black text-amber-400 flex items-center gap-1">
+              <Flame className="w-4 h-4 fill-amber-400 text-amber-400" /> LVL{' '}
+              {level}
             </span>
-            <div className="w-28 sm:w-36 h-2.5 bg-slate-800 rounded-full overflow-hidden mt-1 border border-slate-700">
+            <div className="w-28 sm:w-32 h-3 bg-stone-800 rounded-full overflow-hidden mt-1 border border-stone-700">
               <div
-                className="h-full bg-gradient-to-r from-emerald-500 to-teal-300 transition-all duration-500 rounded-full"
+                className="h-full bg-gradient-to-r from-emerald-400 to-lime-400 transition-all duration-500"
                 style={{ width: `${expProgress}%` }}
               />
             </div>
           </div>
-          <div className="flex items-center gap-1.5 bg-emerald-500/20 px-3 py-1.5 rounded-lg border border-emerald-500/40">
-            <span className="text-lg">💎</span>
-            <span className="text-lg font-black text-emerald-300">{stars}</span>
+          <div className="flex items-center gap-2 bg-emerald-500 px-3 py-1.5 rounded-xl border-b-4 border-emerald-700">
+            <span className="text-xl">💎</span>
+            <span className="text-xl font-black text-white drop-shadow">
+              {stars}
+            </span>
           </div>
         </div>
       </header>
 
-      {/* 🎮 MAIN DASHBOARD / GAME CANVAS */}
-      <main className="w-full max-w-4xl bg-slate-900/90 backdrop-blur-lg border-2 border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.6)] relative min-h-[520px] flex flex-col items-center justify-center z-10">
-        {/* 1. DASHBOARD MENU VIEW */}
+      {/* 🏰 MAIN GAME BOARD */}
+      <main className="w-full max-w-4xl bg-stone-100 border-4 border-b-8 border-stone-300 rounded-3xl p-6 sm:p-10 shadow-2xl relative min-h-[500px] flex flex-col items-center justify-center">
+        {/* 1. DASHBOARD MODE SELECT */}
         {!currentCategory && (
           <div className="w-full text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-300 text-sm font-semibold mb-3">
-              <Sparkles className="w-4 h-4" /> เลือกโหมดการผจญภัย
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-bold text-sm mb-3">
+              <Sparkles className="w-4 h-4 text-amber-500" /> เลือกภารกิจวันนี้
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white mb-8 tracking-wide">
-              ภารกิจเก็บเกี่ยวความรู้ประจำวัน
+            <h2 className="text-2xl sm:text-3xl font-black text-stone-800 mb-8">
+              ผจญภัยในดินแดนความรู้
             </h2>
 
-            {/* HOTBAR SLOT GRID */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {[
                 {
                   id: 'listening',
                   title: 'ฟังจับใจความ',
-                  desc: 'ฝึกการฟังและสรุปความ',
+                  desc: 'ฝึกฟังและจับประเด็นสำคัญ',
                   icon: '🎧',
-                  border: 'hover:border-emerald-500/60',
-                  bg: 'hover:bg-emerald-950/30'
+                  bg: 'bg-emerald-500 hover:bg-emerald-400 border-emerald-700'
                 },
                 {
                   id: 'spatial',
                   title: 'มิติสัมพันธ์',
-                  desc: 'การสังเกตและมิติรูปทรง',
+                  desc: 'ฝึกการสังเกตและทิศทาง',
                   icon: '🧩',
-                  border: 'hover:border-indigo-500/60',
-                  bg: 'hover:bg-indigo-950/30'
+                  bg: 'bg-sky-500 hover:bg-sky-400 border-sky-700'
                 },
                 {
                   id: 'pattern',
                   title: 'อนุกรมรูปทรง',
-                  desc: 'ตรรกะและการคาดการณ์',
+                  desc: 'ค้นหาแบบรูปแบบลำดับ',
                   icon: '🔄',
-                  border: 'hover:border-amber-500/60',
-                  bg: 'hover:bg-amber-950/30'
+                  bg: 'bg-amber-500 hover:bg-amber-400 border-amber-700'
                 },
                 {
                   id: 'simon',
                   title: 'คำสั่งของซิมอน',
-                  desc: 'ความจำระยะสั้นและลำดับ',
+                  desc: 'ทดสอบความจำระยะสั้น',
                   icon: '📢',
-                  border: 'hover:border-rose-500/60',
-                  bg: 'hover:bg-rose-950/30'
+                  bg: 'bg-rose-500 hover:bg-rose-400 border-rose-700'
                 }
               ].map((menu) => (
                 <motion.button
                   key={menu.id}
-                  whileHover={{ y: -4, scale: 1.01 }}
-                  whileTap={{ scale: 0.97 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.96 }}
                   onClick={() => loadCategory(menu.id)}
-                  className={`group relative bg-slate-800/60 border-2 border-slate-700/80 ${menu.border} ${menu.bg} rounded-2xl p-5 flex items-center gap-4 transition-all duration-300 text-left shadow-lg overflow-hidden`}
+                  className={`${menu.bg} text-white border-b-8 rounded-2xl p-6 flex items-center gap-5 shadow-lg text-left transition active:border-b-0 active:translate-y-2`}
                 >
-                  <div className="w-16 h-16 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-4xl shadow-inner group-hover:scale-110 transition duration-300">
+                  <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center text-4xl shadow-inner shrink-0">
                     {menu.icon}
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-white group-hover:text-sky-300 transition">
+                  <div>
+                    <h3 className="text-xl font-black drop-shadow">
                       {menu.title}
                     </h3>
-                    <p className="text-xs text-slate-400 mt-0.5">{menu.desc}</p>
+                    <p className="text-xs text-white/90 font-medium mt-1">
+                      {menu.desc}
+                    </p>
                   </div>
                 </motion.button>
               ))}
@@ -231,18 +227,18 @@ export default function SatitPrepApp() {
           </div>
         )}
 
-        {/* 2. ACTIVE GAME VIEW */}
+        {/* 2. GAME PLAY SCREEN */}
         {currentCategory && currentQ && (
           <div className="w-full flex flex-col items-center">
-            {/* Audio Command Player */}
+            {/* Audio Command Button */}
             <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.96 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => speak(currentQ.audioText)}
-              className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold py-3.5 px-8 rounded-2xl text-lg flex items-center gap-3 shadow-[0_0_20px_rgba(56,189,248,0.4)] mb-8 border border-sky-300/30"
+              className="bg-rose-500 hover:bg-rose-400 border-b-8 border-rose-700 text-white font-black py-4 px-8 rounded-2xl text-xl flex items-center gap-3 shadow-xl mb-8 active:border-b-0 active:translate-y-2"
             >
-              <Volume2 className="w-7 h-7 text-amber-300 animate-pulse" />
-              <span>กดเพื่อฟังคำสั่งเสียง</span>
+              <Volume2 className="w-8 h-8 text-amber-300 animate-bounce" />
+              <span>กดเพื่อฟังโจทย์เสียง</span>
             </motion.button>
 
             {/* Listening / Spatial Options */}
@@ -252,16 +248,14 @@ export default function SatitPrepApp() {
                 {currentQ.options.map((opt) => (
                   <motion.button
                     key={opt.id}
-                    whileHover={{ scale: 1.03 }}
+                    whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => handleAnswer(opt.isCorrect)}
-                    className="bg-slate-800/80 hover:bg-slate-700/80 border-2 border-slate-700 hover:border-sky-400/80 rounded-2xl p-6 flex flex-col items-center justify-center text-6xl min-h-[150px] shadow-lg transition group"
+                    className="bg-white hover:bg-amber-50 border-4 border-stone-200 hover:border-amber-400 border-b-8 border-b-stone-300 hover:border-b-amber-500 rounded-3xl p-6 flex flex-col items-center justify-center min-h-[160px] shadow-md transition active:border-b-4 active:translate-y-1"
                   >
-                    <span className="group-hover:scale-110 transition duration-300">
-                      {opt.icon}
-                    </span>
+                    <span className="text-6xl">{opt.icon}</span>
                     {opt.text && (
-                      <span className="text-sm font-semibold text-slate-300 mt-3">
+                      <span className="text-lg font-bold text-stone-700 mt-3">
                         {opt.text}
                       </span>
                     )}
@@ -270,16 +264,16 @@ export default function SatitPrepApp() {
               </div>
             )}
 
-            {/* Pattern Matching Display */}
+            {/* Pattern Sequence */}
             {currentCategory === 'pattern' && (
               <div className="w-full flex flex-col items-center gap-8">
-                <div className="flex items-center gap-3 bg-slate-950 p-5 rounded-2xl border border-slate-800 shadow-inner">
+                <div className="flex items-center gap-3 bg-stone-200 p-5 rounded-2xl border-4 border-stone-300 shadow-inner">
                   {currentQ.sequence.map((item, idx) => (
                     <span key={idx} className="text-5xl">
                       {item}
                     </span>
                   ))}
-                  <div className="w-16 h-16 border-2 border-dashed border-sky-400 bg-sky-500/10 rounded-xl flex items-center justify-center text-3xl font-black text-sky-400 animate-pulse">
+                  <div className="w-16 h-16 border-4 border-dashed border-amber-500 bg-amber-100 rounded-xl flex items-center justify-center text-3xl font-black text-amber-600 animate-pulse">
                     ?
                   </div>
                 </div>
@@ -288,10 +282,10 @@ export default function SatitPrepApp() {
                   {currentQ.options.map((opt) => (
                     <motion.button
                       key={opt.id}
-                      whileHover={{ scale: 1.08 }}
+                      whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.92 }}
                       onClick={() => handleAnswer(opt.isCorrect)}
-                      className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-700 hover:border-sky-400 rounded-2xl p-5 text-5xl shadow-md transition"
+                      className="bg-white border-4 border-stone-200 border-b-8 border-b-stone-300 hover:border-amber-400 hover:border-b-amber-500 rounded-2xl p-5 text-5xl shadow-md transition active:border-b-4 active:translate-y-1"
                     >
                       {opt.icon}
                     </motion.button>
@@ -300,13 +294,13 @@ export default function SatitPrepApp() {
               </div>
             )}
 
-            {/* Simon Says Display */}
+            {/* Simon Says Sequence */}
             {currentCategory === 'simon' && (
               <div className="w-full flex flex-col items-center gap-6">
-                <div className="min-h-[70px] flex items-center gap-2 bg-slate-950 border border-slate-800 rounded-2xl px-6 py-2 shadow-inner">
+                <div className="min-h-[70px] flex items-center gap-3 bg-stone-200 border-4 border-stone-300 rounded-2xl px-6 py-2 shadow-inner">
                   {simonInput.length === 0 ? (
-                    <span className="text-slate-500 text-sm font-medium">
-                      กดเลือกรูปภาพตามลำดับที่ได้ยิน...
+                    <span className="text-stone-500 font-bold">
+                      กดเลือกภาพตามลำดับที่ได้ยิน...
                     </span>
                   ) : (
                     simonInput.map((item, idx) => (
@@ -324,7 +318,7 @@ export default function SatitPrepApp() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.92 }}
                       onClick={() => handleSimonClick(item)}
-                      className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-700 hover:border-rose-400 rounded-2xl p-6 text-5xl shadow-md transition"
+                      className="bg-white border-4 border-stone-200 border-b-8 border-b-stone-300 hover:border-rose-400 hover:border-b-rose-500 rounded-2xl p-6 text-5xl shadow-md transition active:border-b-4 active:translate-y-1"
                     >
                       {item}
                     </motion.button>
@@ -335,33 +329,30 @@ export default function SatitPrepApp() {
           </div>
         )}
 
-        {/* 3. GAMIFIED OVERLAY NOTIFICATION */}
+        {/* 3. RESULT OVERLAY */}
         <AnimatePresence>
           {feedback && (
             <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
+              initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.85 }}
-              className="absolute inset-0 bg-slate-950/95 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center z-30 p-6 border-2 border-slate-700"
+              exit={{ opacity: 0, scale: 0.8 }}
+              className="absolute inset-0 bg-stone-900/90 rounded-3xl flex flex-col items-center justify-center z-30 p-6 text-center"
             >
               {feedback === 'success' ? (
                 <>
-                  <div className="relative">
-                    <Trophy className="w-24 h-24 text-amber-400 animate-bounce mb-3 filter drop-shadow-[0_0_15px_rgba(251,191,36,0.6)]" />
-                    <Sparkles className="w-8 h-8 text-emerald-400 absolute -top-2 -right-2 animate-spin" />
-                  </div>
-                  <span className="text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">
-                    ภารกิจสำเร็จ!
+                  <Trophy className="w-28 h-28 text-amber-400 animate-bounce mb-3 drop-shadow-[0_0_20px_rgba(251,191,36,0.8)]" />
+                  <span className="text-4xl font-black text-emerald-400 drop-shadow-[0_2px_0_#000]">
+                    ถูกต้องแล้วครับ!
                   </span>
-                  <span className="text-lg text-emerald-400 font-bold mt-2 bg-emerald-500/10 px-4 py-1 rounded-full border border-emerald-500/20">
+                  <span className="text-xl text-amber-300 font-extrabold mt-3 bg-amber-500/20 px-6 py-2 rounded-full border border-amber-400/30">
                     +1 EXP 💎
                   </span>
                 </>
               ) : (
                 <>
-                  <RefreshCw className="w-20 h-20 text-rose-400 animate-spin mb-3" />
-                  <span className="text-2xl font-bold text-rose-400">
-                    เกือบถูกต้องแล้ว! ลองอีกทีนะ
+                  <RefreshCw className="w-24 h-24 text-rose-400 animate-spin mb-3" />
+                  <span className="text-3xl font-black text-rose-400 drop-shadow-[0_2px_0_#000]">
+                    พยายามอีกนิดนะ!
                   </span>
                 </>
               )}
