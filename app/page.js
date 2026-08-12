@@ -20,10 +20,16 @@ export default function SatitPrepApp() {
   const [simonInput, setSimonInput] = useState([])
   const [feedback, setFeedback] = useState(null)
 
+  // โหลดดาวสะสมจาก LocalStorage
   useEffect(() => {
     const savedStars = localStorage.getItem('satit_hero_stars')
     if (savedStars) setStars(parseInt(savedStars))
   }, [])
+
+  // 🟢 ล้างช่องคำตอบของซิมอนทุกครั้งที่มีการเปลี่ยนข้อ หรือเปลี่ยนหมวดหมู่
+  useEffect(() => {
+    setSimonInput([])
+  }, [currentIndex, currentCategory])
 
   const loadCategory = async (category) => {
     try {
