@@ -3,50 +3,150 @@
     "id": "s1",
     "audioText": "ข้อใดคือรูปทรงกลมสีฟ้า",
     "options": [
-      { "id": "1", "icon": "🔵", "text": "", "isCorrect": true },
-      { "id": "2", "icon": "🟦", "text": "", "isCorrect": false },
-      { "id": "3", "icon": "🔺", "text": "", "isCorrect": false },
-      { "id": "4", "icon": "⭐", "text": "", "isCorrect": false }
+      { "id": "1", "icon": "🔵", "text": "วงกลมฟ้า", "isCorrect": true },
+      { "id": "2", "icon": "🟦", "text": "สี่เหลี่ยมฟ้า", "isCorrect": false },
+      { "id": "3", "icon": "🔺", "text": "สามเหลี่ยมแดง", "isCorrect": false },
+      { "id": "4", "icon": "⭐", "text": "ดาวเหลือง", "isCorrect": false }
     ]
   },
   {
     "id": "s2",
     "audioText": "เลือกรูปสามเหลี่ยมสีแดง",
     "options": [
-      { "id": "1", "icon": "🟩", "text": "", "isCorrect": false },
-      { "id": "2", "icon": "🔺", "text": "", "isCorrect": true },
-      { "id": "3", "icon": "🟡", "text": "", "isCorrect": false },
-      { "id": "4", "icon": "💎", "text": "", "isCorrect": false }
+      { "id": "1", "icon": "🟩", "text": "สี่เหลี่ยมเขียว", "isCorrect": false },
+      { "id": "2", "icon": "🔺", "text": "สามเหลี่ยมแดง", "isCorrect": true },
+      { "id": "3", "icon": "🟡", "text": "วงกลมเหลือง", "isCorrect": false },
+      { "id": "4", "icon": "💎", "text": "เพชรฟ้า", "isCorrect": false }
     ]
   },
   {
     "id": "s3",
     "audioText": "รูปใดคือดวงดาวสีเหลืองสว่าง",
     "options": [
-      { "id": "1", "icon": "🌙", "text": "", "isCorrect": false },
-      { "id": "2", "icon": "☀️", "text": "", "isCorrect": false },
-      { "id": "3", "icon": "⭐", "text": "", "isCorrect": true },
-      { "id": "4", "icon": "☁️", "text": "", "isCorrect": false }
+      { "id": "1", "icon": "🌙", "text": "พระจันทร์", "isCorrect": false },
+      { "id": "2", "icon": "☀️", "text": "พระอาทิตย์", "isCorrect": false },
+      { "id": "3", "icon": "⭐", "text": "ดวงดาว", "isCorrect": true },
+      { "id": "4", "icon": "☁️", "text": "ก้อนเมฆ", "isCorrect": false }
     ]
   },
   {
     "id": "s4",
     "audioText": "รูปสี่เหลี่ยมสีเขียวคือข้อใด",
     "options": [
-      { "id": "1", "icon": "🟩", "text": "", "isCorrect": true },
-      { "id": "2", "icon": "🔴", "text": "", "isCorrect": false },
-      { "id": "3", "icon": "🔷", "text": "", "isCorrect": false },
-      { "id": "4", "icon": "🟧", "text": "", "isCorrect": false }
+      { "id": "1", "icon": "🟩", "text": "สี่เหลี่ยมเขียว", "isCorrect": true },
+      { "id": "2", "icon": "🔴", "text": "วงกลมแดง", "isCorrect": false },
+      { "id": "3", "icon": "🔷", "text": "เพชรฟ้า", "isCorrect": false },
+      { "id": "4", "icon": "🟧", "text": "สี่เหลี่ยมส้ม", "isCorrect": false }
     ]
   },
   {
     "id": "s5",
     "audioText": "ข้อใดคือหัวใจสีชมพู",
     "options": [
-      { "id": "1", "icon": "💖", "text": "", "isCorrect": true },
-      { "id": "2", "icon": "💜", "text": "", "isCorrect": false },
-      { "id": "3", "icon": "💙", "text": "", "isCorrect": false },
-      { "id": "4", "icon": "🖤", "text": "", "isCorrect": false }
+      { "id": "1", "icon": "💖", "text": "หัวใจชมพู", "isCorrect": true },
+      { "id": "2", "icon": "💜", "text": "หัวใจม่วง", "isCorrect": false },
+      { "id": "3", "icon": "💙", "text": "หัวใจฟ้า", "isCorrect": false },
+      { "id": "4", "icon": "🖤", "text": "หัวใจดำ", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s6",
+    "audioText": "ข้อใดคือสัตว์ที่มีขนาดตัวใหญ่ที่สุด",
+    "options": [
+      { "id": "1", "icon": "🐜", "text": "มด", "isCorrect": false },
+      { "id": "2", "icon": "🐭", "text": "หนู", "isCorrect": false },
+      { "id": "3", "icon": "🐘", "text": "ช้าง", "isCorrect": true },
+      { "id": "4", "icon": "🐦", "text": "นก", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s7",
+    "audioText": "ข้อใดคือสัตว์ที่มีคอยาวที่สุด",
+    "options": [
+      { "id": "1", "icon": "🐶", "text": "สุนัข", "isCorrect": false },
+      { "id": "2", "icon": "🦒", "text": "ยีราฟ", "isCorrect": true },
+      { "id": "3", "icon": "🐱", "text": "แมว", "isCorrect": false },
+      { "id": "4", "icon": "🐷", "text": "หมู", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s8",
+    "audioText": "สัตว์ชนิดใดอาศัยและว่ายน้ำอยู่ในทะเล",
+    "options": [
+      { "id": "1", "icon": "🐬", "text": "โลมา", "isCorrect": true },
+      { "id": "2", "icon": "🐒", "text": "ลิง", "isCorrect": false },
+      { "id": "3", "icon": "🦁", "text": "สิงโต", "isCorrect": false },
+      { "id": "4", "icon": "🦓", "text": "ม้าลาย", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s9",
+    "audioText": "ข้อใดคือพระจันทร์เสี้ยวสีเหลือง",
+    "options": [
+      { "id": "1", "icon": "🌙", "text": "พระจันทร์เสี้ยว", "isCorrect": true },
+      { "id": "2", "icon": "☀️", "text": "พระอาทิตย์", "isCorrect": false },
+      { "id": "3", "icon": "⭐", "text": "ดวงดาว", "isCorrect": false },
+      { "id": "4", "icon": "⚡", "text": "สายฟ้า", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s10",
+    "audioText": "เลือกลูกศรที่ชี้ขึ้นข้างบน",
+    "options": [
+      { "id": "1", "icon": "⬇️", "text": "ชี้ลง", "isCorrect": false },
+      { "id": "2", "icon": "⬆️", "text": "ชี้ขึ้น", "isCorrect": true },
+      { "id": "3", "icon": "⬅️", "text": "ชี้ซ้าย", "isCorrect": false },
+      { "id": "4", "icon": "➡️", "text": "ชี้ขวา", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s11",
+    "audioText": "เลือกลูกศรที่ชี้ไปทางขวามือ",
+    "options": [
+      { "id": "1", "icon": "⬅️", "text": "ชี้ซ้าย", "isCorrect": false },
+      { "id": "2", "icon": "⬇️", "text": "ชี้ลง", "isCorrect": false },
+      { "id": "3", "icon": "➡️", "text": "ชี้ขวา", "isCorrect": true },
+      { "id": "4", "icon": "⬆️", "text": "ชี้ขึ้น", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s12",
+    "audioText": "รูปใดคือเพชรสีฟ้าประกายสดใส",
+    "options": [
+      { "id": "1", "icon": "💎", "text": "เพชรฟ้า", "isCorrect": true },
+      { "id": "2", "icon": "👑", "text": "มงกุฎ", "isCorrect": false },
+      { "id": "3", "icon": "💍", "text": "แหวน", "isCorrect": false },
+      { "id": "4", "icon": "🪙", "text": "เหรียญทอง", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s13",
+    "audioText": "ข้อใดคือดวงอาทิตย์ที่ส่องแสงอบอุ่นในตอนกลางวัน",
+    "options": [
+      { "id": "1", "icon": "🌧️", "text": "ฝนตก", "isCorrect": false },
+      { "id": "2", "icon": "☀️", "text": "ดวงอาทิตย์", "isCorrect": true },
+      { "id": "3", "icon": "🌙", "text": "ดวงจันทร์", "isCorrect": false },
+      { "id": "4", "icon": "❄️", "text": "หิมะ", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s14",
+    "audioText": "ยานพาหนะชนิดใดสามารถบินบนท้องฟ้าได้",
+    "options": [
+      { "id": "1", "icon": "🚗", "text": "รถยนต์", "isCorrect": false },
+      { "id": "2", "icon": "🚢", "text": "เรือสำราญ", "isCorrect": false },
+      { "id": "3", "icon": "✈️", "text": "เครื่องบิน", "isCorrect": true },
+      { "id": "4", "icon": "🚂", "text": "รถไฟ", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s15",
+    "audioText": "เลือกผลไม้ที่มีเปลือกสีเหลืองและลิงชอบกิน",
+    "options": [
+      { "id": "1", "icon": "🍎", "text": "แอปเปิล", "isCorrect": false },
+      { "id": "2", "icon": "🍌", "text": "กล้วย", "isCorrect": true },
+      { "id": "3", "icon": "🍇", "text": "องุ่น", "isCorrect": false },
+      { "id": "4", "icon": "🍉", "text": "แตงโม", "isCorrect": false }
     ]
   }
 ]

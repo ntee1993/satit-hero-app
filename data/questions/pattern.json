@@ -48,5 +48,105 @@
       { "id": "2", "icon": "💎", "isCorrect": false },
       { "id": "3", "icon": "🎁", "isCorrect": false }
     ]
+  },
+  {
+    "id": "p6",
+    "audioText": "เรียงลำดับ วงกลมแดง วงกลมน้ำเงิน วงกลมแดง วงกลมน้ำเงิน รูปถัดไปคืออะไร",
+    "sequence": ["🔴", "🔵", "🔴", "🔵"],
+    "options": [
+      { "id": "1", "icon": "🔴", "isCorrect": true },
+      { "id": "2", "icon": "🔵", "isCorrect": false },
+      { "id": "3", "icon": "🟡", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p7",
+    "audioText": "เรียงลำดับ ลูกศรชี้ขึ้น ชี้ขวา ชี้ลง รูปถัดไปควรชี้ไปทางไหน",
+    "sequence": ["⬆️", "➡️", "⬇️"],
+    "options": [
+      { "id": "1", "icon": "⬅️", "isCorrect": true },
+      { "id": "2", "icon": "⬆️", "isCorrect": false },
+      { "id": "3", "icon": "➡️", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p8",
+    "audioText": "เรียงลำดับ ช้าง หมี ช้าง หมี รูปถัดไปคืออะไร",
+    "sequence": ["🐘", "🐻", "🐘", "🐻"],
+    "options": [
+      { "id": "1", "icon": "🐘", "isCorrect": true },
+      { "id": "2", "icon": "🐻", "isCorrect": false },
+      { "id": "3", "icon": "🦁", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p9",
+    "audioText": "เรียงลำดับ สี่เหลี่ยมเขียว สามเหลี่ยมแดง สี่เหลี่ยมเขียว สามเหลี่ยมแดง รูปถัดไปคืออะไร",
+    "sequence": ["🟩", "🔺", "🟩", "🔺"],
+    "options": [
+      { "id": "1", "icon": "🟩", "isCorrect": true },
+      { "id": "2", "icon": "🔺", "isCorrect": false },
+      { "id": "3", "icon": "🔵", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p10",
+    "audioText": "เรียงลำดับ พระอาทิตย์ พระจันทร์ ดวงดาว พระอาทิตย์ พระจันทร์ รูปถัดไปคืออะไร",
+    "sequence": ["☀️", "🌙", "⭐", "☀️", "🌙"],
+    "options": [
+      { "id": "1", "icon": "⭐", "isCorrect": true },
+      { "id": "2", "icon": "☀️", "isCorrect": false },
+      { "id": "3", "icon": "🌙", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p11",
+    "audioText": "เรียงลำดับ ผีเสื้อ ดอกไม้ ผีเสื้อ ดอกไม้ รูปถัดไปคืออะไร",
+    "sequence": ["🦋", "🌸", "🦋", "🌸"],
+    "options": [
+      { "id": "1", "icon": "🦋", "isCorrect": true },
+      { "id": "2", "icon": "🌸", "isCorrect": false },
+      { "id": "3", "icon": "🐝", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p12",
+    "audioText": "เรียงลำดับ รถยนต์ เครื่องบิน รถยนต์ เครื่องบิน รูปถัดไปคืออะไร",
+    "sequence": ["🚗", "✈️", "🚗", "✈️"],
+    "options": [
+      { "id": "1", "icon": "🚗", "isCorrect": true },
+      { "id": "2", "icon": "✈️", "isCorrect": false },
+      { "id": "3", "icon": "🚢", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p13",
+    "audioText": "เรียงลำดับ หัวใจเหลือง หัวใจฟ้า หัวใจม่วง หัวใจเหลือง หัวใจฟ้า รูปถัดไปคืออะไร",
+    "sequence": ["💛", "💙", "💜", "💛", "💙"],
+    "options": [
+      { "id": "1", "icon": "💜", "isCorrect": true },
+      { "id": "2", "icon": "💛", "isCorrect": false },
+      { "id": "3", "icon": "💙", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p14",
+    "audioText": "เรียงลำดับ วงกลมฟ้า สี่เหลี่ยมเขียว สามเหลี่ยมแดง วงกลมฟ้า สี่เหลี่ยมเขียว รูปถัดไปคืออะไร",
+    "sequence": ["🔵", "🟩", "🔺", "🔵", "🟩"],
+    "options": [
+      { "id": "1", "icon": "🔺", "isCorrect": true },
+      { "id": "2", "icon": "🔵", "isCorrect": false },
+      { "id": "3", "icon": "🟩", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p15",
+    "audioText": "เรียงลำดับ ลูกฟุตบอล ลูกบาสเกตบอล ลูกฟุตบอล ลูกบาสเกตบอล รูปถัดไปคืออะไร",
+    "sequence": ["⚽", "🏀", "⚽", "🏀"],
+    "options": [
+      { "id": "1", "icon": "⚽", "isCorrect": true },
+      { "id": "2", "icon": "🏀", "isCorrect": false },
+      { "id": "3", "icon": "🎾", "isCorrect": false }
+    ]
   }
 ]

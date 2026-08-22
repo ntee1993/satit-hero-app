@@ -48,5 +48,105 @@
       { "id": "3", "icon": "🍦", "text": "ไอศกรีม", "isCorrect": true },
       { "id": "4", "icon": "🍩", "text": "โดนัท", "isCorrect": false }
     ]
+  },
+  {
+    "id": "l6",
+    "audioText": "คุณหมอใจดีสวมเสื้อกาวน์สีขาวตรวจคนไข้ที่โรงพยาบาล",
+    "options": [
+      { "id": "1", "icon": "👨‍🍳", "text": "พ่อครัว", "isCorrect": false },
+      { "id": "2", "icon": "👨‍⚕️", "text": "คุณหมอ", "isCorrect": true },
+      { "id": "3", "icon": "👮", "text": "ตำรวจ", "isCorrect": false },
+      { "id": "4", "icon": "👨‍🚒", "text": "นักดับเพลิง", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l7",
+    "audioText": "นักบินอวกาศขึ้นยานอวกาศพุ่งทะยานไปสำรวจดวงจันทร์",
+    "options": [
+      { "id": "1", "icon": "🚗", "text": "รถยนต์", "isCorrect": false },
+      { "id": "2", "icon": "🚀", "text": "จรวดอวกาศ", "isCorrect": true },
+      { "id": "3", "icon": "⛵", "text": "เรือใบ", "isCorrect": false },
+      { "id": "4", "icon": "🚲", "text": "จักรยาน", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l8",
+    "audioText": "เจ้าหน้าที่ดับเพลิงขับรถสีแดงเปิดไซเรนไปช่วยดับไฟ",
+    "options": [
+      { "id": "1", "icon": "🚒", "text": "รถดับเพลิง", "isCorrect": true },
+      { "id": "2", "icon": "🚓", "text": "รถตำรวจ", "isCorrect": false },
+      { "id": "3", "icon": "🚕", "text": "แท็กซี่", "isCorrect": false },
+      { "id": "4", "icon": "🚌", "text": "รถบัส", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l9",
+    "audioText": "เจ้ากบสีเขียวนั่งอยู่บนใบบัวแล้วกระโดดลงน้ำเสียงดังจ๋อม",
+    "options": [
+      { "id": "1", "icon": "🦆", "text": "เป็ด", "isCorrect": false },
+      { "id": "2", "icon": "🐸", "text": "กบ", "isCorrect": true },
+      { "id": "3", "icon": "🦀", "text": "ปู", "isCorrect": false },
+      { "id": "4", "icon": "🐢", "text": "เต่า", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l10",
+    "audioText": "น้องหมีแพนด้าตัวอ้วนกลมชอบกินใบไผ่สีเขียวในป่า",
+    "options": [
+      { "id": "1", "icon": "🐼", "text": "หมีแพนด้า", "isCorrect": true },
+      { "id": "2", "icon": "🐨", "text": "โคอาลา", "isCorrect": false },
+      { "id": "3", "icon": "🐯", "text": "เสือ", "isCorrect": false },
+      { "id": "4", "icon": "🐒", "text": "ลิง", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l11",
+    "audioText": "ในวันที่ฝนตกหนัก น้องพลอยต้องกางร่มเพื่อไม่ให้ตัวเปียก",
+    "options": [
+      { "id": "1", "icon": "🕶️", "text": "แว่นกันแดด", "isCorrect": false },
+      { "id": "2", "icon": "☂️", "text": "ร่มกันฝน", "isCorrect": true },
+      { "id": "3", "icon": "🧢", "text": "หมวกแก๊ป", "isCorrect": false },
+      { "id": "4", "icon": "🎒", "text": "กระเป๋า", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l12",
+    "audioText": "คุณครูใจดีเปิดหนังสือเล่มใหญ่เล่านิทานให้นักเรียนฟัง",
+    "options": [
+      { "id": "1", "icon": "📱", "text": "โทรศัพท์", "isCorrect": false },
+      { "id": "2", "icon": "📺", "text": "โทรทัศน์", "isCorrect": false },
+      { "id": "3", "icon": "📖", "text": "หนังสือนิทาน", "isCorrect": true },
+      { "id": "4", "icon": "🎮", "text": "เครื่องเล่นเกม", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l13",
+    "audioText": "เจ้าผึ้งน้อยบินขยันขันแข็งไปดูดน้ำหวานจากดอกไม้สีเหลือง",
+    "options": [
+      { "id": "1", "icon": "🐝", "text": "ผึ้ง", "isCorrect": true },
+      { "id": "2", "icon": "🐜", "text": "มด", "isCorrect": false },
+      { "id": "3", "icon": "🐞", "text": "เต่าทอง", "isCorrect": false },
+      { "id": "4", "icon": "🕷️", "text": "แมงมุม", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l14",
+    "audioText": "ชาวประมงพายเรือใบแล่นออกไปในทะเลเพื่อหาปลา",
+    "options": [
+      { "id": "1", "icon": "✈️", "text": "เครื่องบิน", "isCorrect": false },
+      { "id": "2", "icon": "🚂", "text": "รถไฟ", "isCorrect": false },
+      { "id": "3", "icon": "⛵", "text": "เรือใบ", "isCorrect": true },
+      { "id": "4", "icon": "🚁", "text": "เฮลิคอปเตอร์", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l15",
+    "audioText": "เจ้านกฮูกตาโตชอบตื่นนอนและออกหากินในเวลากลางคืน",
+    "options": [
+      { "id": "1", "icon": "🐔", "text": "ไก่", "isCorrect": false },
+      { "id": "2", "icon": "🦉", "text": "นกฮูก", "isCorrect": true },
+      { "id": "3", "icon": "🦜", "text": "นกแก้ว", "isCorrect": false },
+      { "id": "4", "icon": "🦚", "text": "นกยูง", "isCorrect": false }
+    ]
   }
 ]
