@@ -9,6 +9,7 @@ import ListeningGame from '@/components/games/ListeningGame'
 import SpatialGame from '@/components/games/SpatialGame'
 import PatternGame from '@/components/games/PatternGame'
 import SimonGame from '@/components/games/SimonGame'
+import MockExamGame from '@/components/games/MockExamGame'
 import { useSpeech } from '@/hooks/useSpeech'
 import { useGameProgress } from '@/hooks/useGameProgress'
 import { soundEffects } from '@/lib/sound'
@@ -39,7 +40,14 @@ export default function SatitPrepApp() {
     setSimonInput([])
   }, [currentIndex, currentCategory])
 
-  const loadCategory = async (category) => {
+  const selectCategory = async (category) => {
+    if (category === 'mock-exam') {
+      cancelSpeech()
+      setCurrentCategory('mock-exam')
+      setQuestions([])
+      return
+    }
+
     setIsLoading(true)
     try {
       const res = await fetch(`/api/questions?category=${category}`)
@@ -142,11 +150,20 @@ export default function SatitPrepApp() {
 
         {/* 1. DASHBOARD MODE SELECT */}
         {!isLoading && !currentCategory && (
-          <CategorySelector onSelectCategory={loadCategory} />
+          <CategorySelector onSelectCategory={selectCategory} />
         )}
 
-        {/* 2. GAME PLAY SCREENS */}
-        {!isLoading && currentCategory && currentQ && (
+        {/* 2. TIMED MOCK EXAM MODE */}
+        {!isLoading && currentCategory === 'mock-exam' && (
+          <MockExamGame
+            onExit={handleReturnHome}
+            onRecordAnswer={recordAnswer}
+            onAddStar={addStar}
+          />
+        )}
+
+        {/* 3. PRACTICE GAME PLAY SCREENS */}
+        {!isLoading && currentCategory && currentCategory !== 'mock-exam' && currentQ && (
           <>
             {currentCategory === 'listening' && (
               <ListeningGame
@@ -183,7 +200,7 @@ export default function SatitPrepApp() {
           </>
         )}
 
-        {/* 3. RESULT OVERLAY */}
+        {/* 4. RESULT OVERLAY (FOR PRACTICE MODE) */}
         <FeedbackModal feedback={feedback} />
       </main>
 
