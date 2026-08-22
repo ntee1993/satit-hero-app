@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import AudioButton from '@/components/ui/AudioButton'
+import ShapeRenderer from '@/components/ui/ShapeRenderer'
 
 export default function ListeningGame({ question, onAnswer, onReplayAudio }) {
   if (!question) return null
@@ -19,7 +20,7 @@ export default function ListeningGame({ question, onAnswer, onReplayAudio }) {
             onClick={() => onAnswer(opt.isCorrect)}
             className="bg-white hover:bg-amber-50 border-4 border-stone-200 hover:border-amber-400 border-b-8 border-b-stone-300 hover:border-b-amber-500 rounded-3xl p-6 flex flex-col items-center justify-center min-h-[160px] shadow-md transition active:border-b-4 active:translate-y-1 cursor-pointer"
           >
-            <span className="text-6xl">{opt.icon}</span>
+            <ShapeRenderer item={opt.icon} size={72} className="text-6xl" />
             {opt.text && (
               <span className="text-lg font-bold text-stone-700 mt-3">
                 {opt.text}

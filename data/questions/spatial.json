@@ -3,29 +3,29 @@
     "id": "s1",
     "audioText": "ข้อใดคือรูปทรงกลมสีฟ้า",
     "options": [
-      { "id": "1", "icon": "🔵", "text": "วงกลมฟ้า", "isCorrect": true },
-      { "id": "2", "icon": "🟦", "text": "สี่เหลี่ยมฟ้า", "isCorrect": false },
-      { "id": "3", "icon": "🔺", "text": "สามเหลี่ยมแดง", "isCorrect": false },
-      { "id": "4", "icon": "⭐", "text": "ดาวเหลือง", "isCorrect": false }
+      { "id": "1", "icon": "shape:circle:blue", "text": "วงกลมฟ้า", "isCorrect": true },
+      { "id": "2", "icon": "shape:square:blue", "text": "สี่เหลี่ยมฟ้า", "isCorrect": false },
+      { "id": "3", "icon": "shape:triangle:red", "text": "สามเหลี่ยมแดง", "isCorrect": false },
+      { "id": "4", "icon": "shape:star:yellow", "text": "ดาวเหลือง", "isCorrect": false }
     ]
   },
   {
     "id": "s2",
     "audioText": "เลือกรูปสามเหลี่ยมสีแดง",
     "options": [
-      { "id": "1", "icon": "🟩", "text": "สี่เหลี่ยมเขียว", "isCorrect": false },
-      { "id": "2", "icon": "🔺", "text": "สามเหลี่ยมแดง", "isCorrect": true },
-      { "id": "3", "icon": "🟡", "text": "วงกลมเหลือง", "isCorrect": false },
-      { "id": "4", "icon": "💎", "text": "เพชรฟ้า", "isCorrect": false }
+      { "id": "1", "icon": "shape:square:green", "text": "สี่เหลี่ยมเขียว", "isCorrect": false },
+      { "id": "2", "icon": "shape:triangle:red", "text": "สามเหลี่ยมแดง", "isCorrect": true },
+      { "id": "3", "icon": "shape:circle:yellow", "text": "วงกลมเหลือง", "isCorrect": false },
+      { "id": "4", "icon": "shape:diamond:cyan", "text": "เพชรฟ้า", "isCorrect": false }
     ]
   },
   {
     "id": "s3",
     "audioText": "รูปใดคือดวงดาวสีเหลืองสว่าง",
     "options": [
-      { "id": "1", "icon": "🌙", "text": "พระจันทร์", "isCorrect": false },
-      { "id": "2", "icon": "☀️", "text": "พระอาทิตย์", "isCorrect": false },
-      { "id": "3", "icon": "⭐", "text": "ดวงดาว", "isCorrect": true },
+      { "id": "1", "icon": "shape:moon:yellow", "text": "พระจันทร์", "isCorrect": false },
+      { "id": "2", "icon": "shape:sun:yellow", "text": "พระอาทิตย์", "isCorrect": false },
+      { "id": "3", "icon": "shape:star:yellow", "text": "ดวงดาว", "isCorrect": true },
       { "id": "4", "icon": "☁️", "text": "ก้อนเมฆ", "isCorrect": false }
     ]
   },
@@ -33,20 +33,20 @@
     "id": "s4",
     "audioText": "รูปสี่เหลี่ยมสีเขียวคือข้อใด",
     "options": [
-      { "id": "1", "icon": "🟩", "text": "สี่เหลี่ยมเขียว", "isCorrect": true },
-      { "id": "2", "icon": "🔴", "text": "วงกลมแดง", "isCorrect": false },
-      { "id": "3", "icon": "🔷", "text": "เพชรฟ้า", "isCorrect": false },
-      { "id": "4", "icon": "🟧", "text": "สี่เหลี่ยมส้ม", "isCorrect": false }
+      { "id": "1", "icon": "shape:square:green", "text": "สี่เหลี่ยมเขียว", "isCorrect": true },
+      { "id": "2", "icon": "shape:circle:red", "text": "วงกลมแดง", "isCorrect": false },
+      { "id": "3", "icon": "shape:diamond:blue", "text": "เพชรน้ำเงิน", "isCorrect": false },
+      { "id": "4", "icon": "shape:square:orange", "text": "สี่เหลี่ยมส้ม", "isCorrect": false }
     ]
   },
   {
     "id": "s5",
     "audioText": "ข้อใดคือหัวใจสีชมพู",
     "options": [
-      { "id": "1", "icon": "💖", "text": "หัวใจชมพู", "isCorrect": true },
-      { "id": "2", "icon": "💜", "text": "หัวใจม่วง", "isCorrect": false },
-      { "id": "3", "icon": "💙", "text": "หัวใจฟ้า", "isCorrect": false },
-      { "id": "4", "icon": "🖤", "text": "หัวใจดำ", "isCorrect": false }
+      { "id": "1", "icon": "shape:heart:pink", "text": "หัวใจชมพู", "isCorrect": true },
+      { "id": "2", "icon": "shape:heart:purple", "text": "หัวใจม่วง", "isCorrect": false },
+      { "id": "3", "icon": "shape:heart:blue", "text": "หัวใจฟ้า", "isCorrect": false },
+      { "id": "4", "icon": "shape:heart:dark", "text": "หัวใจดำ", "isCorrect": false }
     ]
   },
   {
@@ -83,9 +83,9 @@
     "id": "s9",
     "audioText": "ข้อใดคือพระจันทร์เสี้ยวสีเหลือง",
     "options": [
-      { "id": "1", "icon": "🌙", "text": "พระจันทร์เสี้ยว", "isCorrect": true },
-      { "id": "2", "icon": "☀️", "text": "พระอาทิตย์", "isCorrect": false },
-      { "id": "3", "icon": "⭐", "text": "ดวงดาว", "isCorrect": false },
+      { "id": "1", "icon": "shape:moon:yellow", "text": "พระจันทร์เสี้ยว", "isCorrect": true },
+      { "id": "2", "icon": "shape:sun:yellow", "text": "พระอาทิตย์", "isCorrect": false },
+      { "id": "3", "icon": "shape:star:yellow", "text": "ดวงดาว", "isCorrect": false },
       { "id": "4", "icon": "⚡", "text": "สายฟ้า", "isCorrect": false }
     ]
   },
@@ -93,27 +93,27 @@
     "id": "s10",
     "audioText": "เลือกลูกศรที่ชี้ขึ้นข้างบน",
     "options": [
-      { "id": "1", "icon": "⬇️", "text": "ชี้ลง", "isCorrect": false },
-      { "id": "2", "icon": "⬆️", "text": "ชี้ขึ้น", "isCorrect": true },
-      { "id": "3", "icon": "⬅️", "text": "ชี้ซ้าย", "isCorrect": false },
-      { "id": "4", "icon": "➡️", "text": "ชี้ขวา", "isCorrect": false }
+      { "id": "1", "icon": "shape:arrow:down:blue", "text": "ชี้ลง", "isCorrect": false },
+      { "id": "2", "icon": "shape:arrow:up:blue", "text": "ชี้ขึ้น", "isCorrect": true },
+      { "id": "3", "icon": "shape:arrow:left:blue", "text": "ชี้ซ้าย", "isCorrect": false },
+      { "id": "4", "icon": "shape:arrow:right:blue", "text": "ชี้ขวา", "isCorrect": false }
     ]
   },
   {
     "id": "s11",
     "audioText": "เลือกลูกศรที่ชี้ไปทางขวามือ",
     "options": [
-      { "id": "1", "icon": "⬅️", "text": "ชี้ซ้าย", "isCorrect": false },
-      { "id": "2", "icon": "⬇️", "text": "ชี้ลง", "isCorrect": false },
-      { "id": "3", "icon": "➡️", "text": "ชี้ขวา", "isCorrect": true },
-      { "id": "4", "icon": "⬆️", "text": "ชี้ขึ้น", "isCorrect": false }
+      { "id": "1", "icon": "shape:arrow:left:green", "text": "ชี้ซ้าย", "isCorrect": false },
+      { "id": "2", "icon": "shape:arrow:down:green", "text": "ชี้ลง", "isCorrect": false },
+      { "id": "3", "icon": "shape:arrow:right:green", "text": "ชี้ขวา", "isCorrect": true },
+      { "id": "4", "icon": "shape:arrow:up:green", "text": "ชี้ขึ้น", "isCorrect": false }
     ]
   },
   {
     "id": "s12",
     "audioText": "รูปใดคือเพชรสีฟ้าประกายสดใส",
     "options": [
-      { "id": "1", "icon": "💎", "text": "เพชรฟ้า", "isCorrect": true },
+      { "id": "1", "icon": "shape:diamond:cyan", "text": "เพชรฟ้า", "isCorrect": true },
       { "id": "2", "icon": "👑", "text": "มงกุฎ", "isCorrect": false },
       { "id": "3", "icon": "💍", "text": "แหวน", "isCorrect": false },
       { "id": "4", "icon": "🪙", "text": "เหรียญทอง", "isCorrect": false }
@@ -124,8 +124,8 @@
     "audioText": "ข้อใดคือดวงอาทิตย์ที่ส่องแสงอบอุ่นในตอนกลางวัน",
     "options": [
       { "id": "1", "icon": "🌧️", "text": "ฝนตก", "isCorrect": false },
-      { "id": "2", "icon": "☀️", "text": "ดวงอาทิตย์", "isCorrect": true },
-      { "id": "3", "icon": "🌙", "text": "ดวงจันทร์", "isCorrect": false },
+      { "id": "2", "icon": "shape:sun:yellow", "text": "ดวงอาทิตย์", "isCorrect": true },
+      { "id": "3", "icon": "shape:moon:yellow", "text": "ดวงจันทร์", "isCorrect": false },
       { "id": "4", "icon": "❄️", "text": "หิมะ", "isCorrect": false }
     ]
   },

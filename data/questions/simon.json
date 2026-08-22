@@ -8,8 +8,8 @@
   {
     "id": "sm2",
     "audioText": "ซิมอนบอกว่า ให้เลือก ดาว แล้วตามด้วย หัวใจ",
-    "correctSequence": ["⭐", "❤️"],
-    "options": ["⭐", "❤️", "🌙", "☀️"]
+    "correctSequence": ["shape:star:yellow", "shape:heart:red"],
+    "options": ["shape:star:yellow", "shape:heart:red", "shape:moon:yellow", "shape:sun:yellow"]
   },
   {
     "id": "sm3",
@@ -26,8 +26,8 @@
   {
     "id": "sm5",
     "audioText": "ซิมอนบอกว่า ให้เลือก มงกุฎ เพชร แล้วตามด้วย มงกุฎ",
-    "correctSequence": ["👑", "💎", "👑"],
-    "options": ["👑", "💎", "🎁", "⭐"]
+    "correctSequence": ["👑", "shape:diamond:cyan", "👑"],
+    "options": ["👑", "shape:diamond:cyan", "🎁", "shape:star:yellow"]
   },
   {
     "id": "sm6",
@@ -44,8 +44,8 @@
   {
     "id": "sm8",
     "audioText": "ซิมอนบอกว่า ให้เลือก พระอาทิตย์ แล้วตามด้วย พระจันทร์",
-    "correctSequence": ["☀️", "🌙"],
-    "options": ["☀️", "🌙", "⭐", "☁️"]
+    "correctSequence": ["shape:sun:yellow", "shape:moon:yellow"],
+    "options": ["shape:sun:yellow", "shape:moon:yellow", "shape:star:yellow", "☁️"]
   },
   {
     "id": "sm9",
@@ -68,8 +68,8 @@
   {
     "id": "sm12",
     "audioText": "ซิมอนบอกว่า ให้เลือก หัวใจสีชมพู แล้วตามด้วย หัวใจสีฟ้า",
-    "correctSequence": ["💖", "💙"],
-    "options": ["💖", "💙", "💛", "💜"]
+    "correctSequence": ["shape:heart:pink", "shape:heart:blue"],
+    "options": ["shape:heart:pink", "shape:heart:blue", "shape:heart:yellow", "shape:heart:purple"]
   },
   {
     "id": "sm13",

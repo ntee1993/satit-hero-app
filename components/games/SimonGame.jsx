@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import AudioButton from '@/components/ui/AudioButton'
+import ShapeRenderer from '@/components/ui/ShapeRenderer'
 import { soundEffects } from '@/lib/sound'
 
 export default function SimonGame({
@@ -22,16 +23,16 @@ export default function SimonGame({
       <AudioButton onClick={onReplayAudio} />
 
       {/* Input Sequence Display */}
-      <div className="min-h-[70px] flex items-center gap-3 bg-stone-200 border-4 border-stone-300 rounded-2xl px-6 py-2 shadow-inner">
+      <div className="min-h-[76px] flex items-center gap-3 bg-stone-200 border-4 border-stone-300 rounded-2xl px-6 py-2 shadow-inner">
         {simonInput.length === 0 ? (
           <span className="text-stone-500 font-bold">
             กดเลือกภาพตามลำดับที่ได้ยิน...
           </span>
         ) : (
           simonInput.map((item, idx) => (
-            <span key={idx} className="text-4xl">
-              {item}
-            </span>
+            <div key={idx} className="flex items-center justify-center">
+              <ShapeRenderer item={item} size={48} className="text-4xl" />
+            </div>
           ))
         )}
       </div>
@@ -44,9 +45,9 @@ export default function SimonGame({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.92 }}
             onClick={() => handleClick(item, idx)}
-            className="bg-white border-4 border-stone-200 border-b-8 border-b-stone-300 hover:border-rose-400 hover:border-b-rose-500 rounded-2xl p-6 text-5xl shadow-md transition active:border-b-4 active:translate-y-1 cursor-pointer"
+            className="bg-white border-4 border-stone-200 border-b-8 border-b-stone-300 hover:border-rose-400 hover:border-b-rose-500 rounded-2xl p-6 shadow-md transition active:border-b-4 active:translate-y-1 flex items-center justify-center min-h-[110px] cursor-pointer"
           >
-            {item}
+            <ShapeRenderer item={item} size={64} className="text-5xl" />
           </motion.button>
         ))}
       </div>

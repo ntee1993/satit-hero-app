@@ -12,11 +12,11 @@
   {
     "id": "p2",
     "audioText": "เรียงลำดับ ดาว หัวใจ ดาว หัวใจ รูปถัดไปคืออะไร",
-    "sequence": ["⭐", "❤️", "⭐", "❤️"],
+    "sequence": ["shape:star:yellow", "shape:heart:red", "shape:star:yellow", "shape:heart:red"],
     "options": [
-      { "id": "1", "icon": "❤️", "isCorrect": false },
-      { "id": "2", "icon": "⭐", "isCorrect": true },
-      { "id": "3", "icon": "🌙", "isCorrect": false }
+      { "id": "1", "icon": "shape:heart:red", "isCorrect": false },
+      { "id": "2", "icon": "shape:star:yellow", "isCorrect": true },
+      { "id": "3", "icon": "shape:moon:yellow", "isCorrect": false }
     ]
   },
   {
@@ -42,31 +42,31 @@
   {
     "id": "p5",
     "audioText": "เรียงลำดับ เพชร มงกุฎ เพชร รูปถัดไปคืออะไร",
-    "sequence": ["💎", "👑", "💎"],
+    "sequence": ["shape:diamond:cyan", "👑", "shape:diamond:cyan"],
     "options": [
       { "id": "1", "icon": "👑", "isCorrect": true },
-      { "id": "2", "icon": "💎", "isCorrect": false },
+      { "id": "2", "icon": "shape:diamond:cyan", "isCorrect": false },
       { "id": "3", "icon": "🎁", "isCorrect": false }
     ]
   },
   {
     "id": "p6",
     "audioText": "เรียงลำดับ วงกลมแดง วงกลมน้ำเงิน วงกลมแดง วงกลมน้ำเงิน รูปถัดไปคืออะไร",
-    "sequence": ["🔴", "🔵", "🔴", "🔵"],
+    "sequence": ["shape:circle:red", "shape:circle:blue", "shape:circle:red", "shape:circle:blue"],
     "options": [
-      { "id": "1", "icon": "🔴", "isCorrect": true },
-      { "id": "2", "icon": "🔵", "isCorrect": false },
-      { "id": "3", "icon": "🟡", "isCorrect": false }
+      { "id": "1", "icon": "shape:circle:red", "isCorrect": true },
+      { "id": "2", "icon": "shape:circle:blue", "isCorrect": false },
+      { "id": "3", "icon": "shape:circle:yellow", "isCorrect": false }
     ]
   },
   {
     "id": "p7",
     "audioText": "เรียงลำดับ ลูกศรชี้ขึ้น ชี้ขวา ชี้ลง รูปถัดไปควรชี้ไปทางไหน",
-    "sequence": ["⬆️", "➡️", "⬇️"],
+    "sequence": ["shape:arrow:up:blue", "shape:arrow:right:blue", "shape:arrow:down:blue"],
     "options": [
-      { "id": "1", "icon": "⬅️", "isCorrect": true },
-      { "id": "2", "icon": "⬆️", "isCorrect": false },
-      { "id": "3", "icon": "➡️", "isCorrect": false }
+      { "id": "1", "icon": "shape:arrow:left:blue", "isCorrect": true },
+      { "id": "2", "icon": "shape:arrow:up:blue", "isCorrect": false },
+      { "id": "3", "icon": "shape:arrow:right:blue", "isCorrect": false }
     ]
   },
   {
@@ -82,21 +82,21 @@
   {
     "id": "p9",
     "audioText": "เรียงลำดับ สี่เหลี่ยมเขียว สามเหลี่ยมแดง สี่เหลี่ยมเขียว สามเหลี่ยมแดง รูปถัดไปคืออะไร",
-    "sequence": ["🟩", "🔺", "🟩", "🔺"],
+    "sequence": ["shape:square:green", "shape:triangle:red", "shape:square:green", "shape:triangle:red"],
     "options": [
-      { "id": "1", "icon": "🟩", "isCorrect": true },
-      { "id": "2", "icon": "🔺", "isCorrect": false },
-      { "id": "3", "icon": "🔵", "isCorrect": false }
+      { "id": "1", "icon": "shape:square:green", "isCorrect": true },
+      { "id": "2", "icon": "shape:triangle:red", "isCorrect": false },
+      { "id": "3", "icon": "shape:circle:blue", "isCorrect": false }
     ]
   },
   {
     "id": "p10",
     "audioText": "เรียงลำดับ พระอาทิตย์ พระจันทร์ ดวงดาว พระอาทิตย์ พระจันทร์ รูปถัดไปคืออะไร",
-    "sequence": ["☀️", "🌙", "⭐", "☀️", "🌙"],
+    "sequence": ["shape:sun:yellow", "shape:moon:yellow", "shape:star:yellow", "shape:sun:yellow", "shape:moon:yellow"],
     "options": [
-      { "id": "1", "icon": "⭐", "isCorrect": true },
-      { "id": "2", "icon": "☀️", "isCorrect": false },
-      { "id": "3", "icon": "🌙", "isCorrect": false }
+      { "id": "1", "icon": "shape:star:yellow", "isCorrect": true },
+      { "id": "2", "icon": "shape:sun:yellow", "isCorrect": false },
+      { "id": "3", "icon": "shape:moon:yellow", "isCorrect": false }
     ]
   },
   {
@@ -122,21 +122,21 @@
   {
     "id": "p13",
     "audioText": "เรียงลำดับ หัวใจเหลือง หัวใจฟ้า หัวใจม่วง หัวใจเหลือง หัวใจฟ้า รูปถัดไปคืออะไร",
-    "sequence": ["💛", "💙", "💜", "💛", "💙"],
+    "sequence": ["shape:heart:yellow", "shape:heart:blue", "shape:heart:purple", "shape:heart:yellow", "shape:heart:blue"],
     "options": [
-      { "id": "1", "icon": "💜", "isCorrect": true },
-      { "id": "2", "icon": "💛", "isCorrect": false },
-      { "id": "3", "icon": "💙", "isCorrect": false }
+      { "id": "1", "icon": "shape:heart:purple", "isCorrect": true },
+      { "id": "2", "icon": "shape:heart:yellow", "isCorrect": false },
+      { "id": "3", "icon": "shape:heart:blue", "isCorrect": false }
     ]
   },
   {
     "id": "p14",
     "audioText": "เรียงลำดับ วงกลมฟ้า สี่เหลี่ยมเขียว สามเหลี่ยมแดง วงกลมฟ้า สี่เหลี่ยมเขียว รูปถัดไปคืออะไร",
-    "sequence": ["🔵", "🟩", "🔺", "🔵", "🟩"],
+    "sequence": ["shape:circle:blue", "shape:square:green", "shape:triangle:red", "shape:circle:blue", "shape:square:green"],
     "options": [
-      { "id": "1", "icon": "🔺", "isCorrect": true },
-      { "id": "2", "icon": "🔵", "isCorrect": false },
-      { "id": "3", "icon": "🟩", "isCorrect": false }
+      { "id": "1", "icon": "shape:triangle:red", "isCorrect": true },
+      { "id": "2", "icon": "shape:circle:blue", "isCorrect": false },
+      { "id": "3", "icon": "shape:square:green", "isCorrect": false }
     ]
   },
   {
