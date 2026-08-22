@@ -1,0 +1,52 @@
+[
+  {
+    "id": "p1",
+    "audioText": "เรียงลำดับ แอปเปิล ส้ม แอปเปิล รูปถัดไปคืออะไร",
+    "sequence": ["🍎", "🍊", "🍎"],
+    "options": [
+      { "id": "1", "icon": "🍊", "isCorrect": true },
+      { "id": "2", "icon": "🍎", "isCorrect": false },
+      { "id": "3", "icon": "🍌", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p2",
+    "audioText": "เรียงลำดับ ดาว หัวใจ ดาว หัวใจ รูปถัดไปคืออะไร",
+    "sequence": ["⭐", "❤️", "⭐", "❤️"],
+    "options": [
+      { "id": "1", "icon": "❤️", "isCorrect": false },
+      { "id": "2", "icon": "⭐", "isCorrect": true },
+      { "id": "3", "icon": "🌙", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p3",
+    "audioText": "เรียงลำดับ รถ นก รถ นก รูปถัดไปคืออะไร",
+    "sequence": ["🚗", "🐦", "🚗", "🐦"],
+    "options": [
+      { "id": "1", "icon": "🚗", "isCorrect": true },
+      { "id": "2", "icon": "🐦", "isCorrect": false },
+      { "id": "3", "icon": "🚀", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p4",
+    "audioText": "เรียงลำดับ ไอศกรีม โดนัท ไอศกรีม โดนัท รูปถัดไปคืออะไร",
+    "sequence": ["🍦", "🍩", "🍦", "🍩"],
+    "options": [
+      { "id": "1", "icon": "🍩", "isCorrect": false },
+      { "id": "2", "icon": "🍦", "isCorrect": true },
+      { "id": "3", "icon": "🍰", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "p5",
+    "audioText": "เรียงลำดับ เพชร มงกุฎ เพชร รูปถัดไปคืออะไร",
+    "sequence": ["💎", "👑", "💎"],
+    "options": [
+      { "id": "1", "icon": "👑", "isCorrect": true },
+      { "id": "2", "icon": "💎", "isCorrect": false },
+      { "id": "3", "icon": "🎁", "isCorrect": false }
+    ]
+  }
+]

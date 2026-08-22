@@ -1,0 +1,52 @@
+[
+  {
+    "id": "s1",
+    "audioText": "ข้อใดคือรูปทรงกลมสีฟ้า",
+    "options": [
+      { "id": "1", "icon": "🔵", "text": "", "isCorrect": true },
+      { "id": "2", "icon": "🟦", "text": "", "isCorrect": false },
+      { "id": "3", "icon": "🔺", "text": "", "isCorrect": false },
+      { "id": "4", "icon": "⭐", "text": "", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s2",
+    "audioText": "เลือกรูปสามเหลี่ยมสีแดง",
+    "options": [
+      { "id": "1", "icon": "🟩", "text": "", "isCorrect": false },
+      { "id": "2", "icon": "🔺", "text": "", "isCorrect": true },
+      { "id": "3", "icon": "🟡", "text": "", "isCorrect": false },
+      { "id": "4", "icon": "💎", "text": "", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s3",
+    "audioText": "รูปใดคือดวงดาวสีเหลืองสว่าง",
+    "options": [
+      { "id": "1", "icon": "🌙", "text": "", "isCorrect": false },
+      { "id": "2", "icon": "☀️", "text": "", "isCorrect": false },
+      { "id": "3", "icon": "⭐", "text": "", "isCorrect": true },
+      { "id": "4", "icon": "☁️", "text": "", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s4",
+    "audioText": "รูปสี่เหลี่ยมสีเขียวคือข้อใด",
+    "options": [
+      { "id": "1", "icon": "🟩", "text": "", "isCorrect": true },
+      { "id": "2", "icon": "🔴", "text": "", "isCorrect": false },
+      { "id": "3", "icon": "🔷", "text": "", "isCorrect": false },
+      { "id": "4", "icon": "🟧", "text": "", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "s5",
+    "audioText": "ข้อใดคือหัวใจสีชมพู",
+    "options": [
+      { "id": "1", "icon": "💖", "text": "", "isCorrect": true },
+      { "id": "2", "icon": "💜", "text": "", "isCorrect": false },
+      { "id": "3", "icon": "💙", "text": "", "isCorrect": false },
+      { "id": "4", "icon": "🖤", "text": "", "isCorrect": false }
+    ]
+  }
+]

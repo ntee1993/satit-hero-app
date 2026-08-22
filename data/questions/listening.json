@@ -1,0 +1,52 @@
+[
+  {
+    "id": "l1",
+    "audioText": "เจ้ากระต่ายน้อยกินแครอทสีส้มอยู่ในสวน",
+    "options": [
+      { "id": "1", "icon": "🐰", "text": "กระต่าย", "isCorrect": true },
+      { "id": "2", "icon": "🦊", "text": "สุนัขจิ้งจอก", "isCorrect": false },
+      { "id": "3", "icon": "🐱", "text": "แมว", "isCorrect": false },
+      { "id": "4", "icon": "🐻", "text": "หมี", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l2",
+    "audioText": "คุณแม่ซื้อแอปเปิลสีแดงผลใหญ่มาจากตลาด",
+    "options": [
+      { "id": "1", "icon": "🍌", "text": "กล้วย", "isCorrect": false },
+      { "id": "2", "icon": "🍎", "text": "แอปเปิล", "isCorrect": true },
+      { "id": "3", "icon": "🍉", "text": "แตงโม", "isCorrect": false },
+      { "id": "4", "icon": "🍊", "text": "ส้ม", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l3",
+    "audioText": "นกตัวสีฟ้ากำลังบินอยู่บนท้องฟ้าแจ่มใส",
+    "options": [
+      { "id": "1", "icon": "🐟", "text": "ปลา", "isCorrect": false },
+      { "id": "2", "icon": "🐦", "text": "นก", "isCorrect": true },
+      { "id": "3", "icon": "🐸", "text": "กบ", "isCorrect": false },
+      { "id": "4", "icon": "🦋", "text": "ผีเสื้อ", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l4",
+    "audioText": "น้องม้าลายวิ่งเล่นอยู่ในทุ่งหญ้าสีเขียว",
+    "options": [
+      { "id": "1", "icon": "🦓", "text": "ม้าลาย", "isCorrect": true },
+      { "id": "2", "icon": "🐘", "text": "ช้าง", "isCorrect": false },
+      { "id": "3", "icon": "🦒", "text": "ยีราฟ", "isCorrect": false },
+      { "id": "4", "icon": "🦁", "text": "สิงโต", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "l5",
+    "audioText": "เด็กๆ ชอบกินไอศกรีมเย็นๆ ในวันฤดูร้อน",
+    "options": [
+      { "id": "1", "icon": "🍕", "text": "พิซซ่า", "isCorrect": false },
+      { "id": "2", "icon": "🍔", "text": "แฮมเบอร์เกอร์", "isCorrect": false },
+      { "id": "3", "icon": "🍦", "text": "ไอศกรีม", "isCorrect": true },
+      { "id": "4", "icon": "🍩", "text": "โดนัท", "isCorrect": false }
+    ]
+  }
+]
