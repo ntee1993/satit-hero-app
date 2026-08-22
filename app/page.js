@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import HudBar from '@/components/ui/HudBar'
 import FeedbackModal from '@/components/ui/FeedbackModal'
+import ParentDashboard from '@/components/parent/ParentDashboard'
 import CategorySelector from '@/components/games/CategorySelector'
 import ListeningGame from '@/components/games/ListeningGame'
 import SpatialGame from '@/components/games/SpatialGame'
@@ -13,7 +14,16 @@ import { useGameProgress } from '@/hooks/useGameProgress'
 import { soundEffects } from '@/lib/sound'
 
 export default function SatitPrepApp() {
-  const { stars, level, expProgress, addStar } = useGameProgress()
+  const {
+    stars,
+    level,
+    expProgress,
+    stats,
+    addStar,
+    recordAnswer,
+    resetStats
+  } = useGameProgress()
+
   const { speak, cancel: cancelSpeech } = useSpeech()
 
   const [currentCategory, setCurrentCategory] = useState(null)
@@ -22,6 +32,7 @@ export default function SatitPrepApp() {
   const [simonInput, setSimonInput] = useState([])
   const [feedback, setFeedback] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [isParentModalOpen, setIsParentModalOpen] = useState(false)
 
   // Reset Simon input whenever question or category changes
   useEffect(() => {
@@ -56,6 +67,9 @@ export default function SatitPrepApp() {
   }
 
   const handleAnswer = (isCorrect) => {
+    // Record analytics for parent report
+    recordAnswer(currentCategory, isCorrect)
+
     if (isCorrect) {
       soundEffects.playCorrect()
       speak('ถูกต้องแล้วครับ เก่งมาก!')
@@ -89,6 +103,7 @@ export default function SatitPrepApp() {
 
     const stepIndex = newSequence.length - 1
     if (symbol !== currentQ.correctSequence[stepIndex]) {
+      recordAnswer('simon', false)
       soundEffects.playWrong()
       speak('ยังไม่ถูกต้อง ลองใหม่อีกครั้งนะครับ')
       setFeedback('wrong')
@@ -110,6 +125,7 @@ export default function SatitPrepApp() {
       <HudBar
         currentCategory={currentCategory}
         onHomeClick={handleReturnHome}
+        onOpenParentDashboard={() => setIsParentModalOpen(true)}
         level={level}
         expProgress={expProgress}
         stars={stars}
@@ -170,6 +186,16 @@ export default function SatitPrepApp() {
         {/* 3. RESULT OVERLAY */}
         <FeedbackModal feedback={feedback} />
       </main>
+
+      {/* 📊 PARENT / TEACHER ANALYTICS DASHBOARD MODAL */}
+      <ParentDashboard
+        isOpen={isParentModalOpen}
+        onClose={() => setIsParentModalOpen(false)}
+        stats={stats}
+        stars={stars}
+        level={level}
+        onResetStats={resetStats}
+      />
     </div>
   )
 }

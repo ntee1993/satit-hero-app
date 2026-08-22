@@ -1,12 +1,24 @@
 'use client'
 
-import { Home, Compass, Flame } from 'lucide-react'
+import { Home, Compass, Flame, BarChart2 } from 'lucide-react'
 import { soundEffects } from '@/lib/sound'
 
-export default function HudBar({ currentCategory, onHomeClick, level, expProgress, stars }) {
+export default function HudBar({
+  currentCategory,
+  onHomeClick,
+  onOpenParentDashboard,
+  level,
+  expProgress,
+  stars
+}) {
   const handleHome = () => {
     soundEffects.playClick()
     onHomeClick()
+  }
+
+  const handleOpenReport = () => {
+    soundEffects.playClick()
+    onOpenParentDashboard?.()
   }
 
   return (
@@ -38,24 +50,38 @@ export default function HudBar({ currentCategory, onHomeClick, level, expProgres
         </div>
       </div>
 
-      {/* EXP & STAR COUNTER */}
-      <div className="flex items-center gap-4 bg-stone-950 px-5 py-2.5 rounded-2xl border-2 border-stone-700">
-        <div className="flex flex-col items-end">
-          <span className="text-xs font-black text-amber-400 flex items-center gap-1">
-            <Flame className="w-4 h-4 fill-amber-400 text-amber-400" /> LVL {level}
-          </span>
-          <div className="w-28 sm:w-32 h-3 bg-stone-800 rounded-full overflow-hidden mt-1 border border-stone-700">
-            <div
-              className="h-full bg-gradient-to-r from-emerald-400 to-lime-400 transition-all duration-500"
-              style={{ width: `${expProgress}%` }}
-            />
+      {/* RIGHT SIDE: PARENT REPORT + EXP & STAR COUNTER */}
+      <div className="flex items-center gap-3">
+        {/* Parent Dashboard Button */}
+        <button
+          onClick={handleOpenReport}
+          className="p-2.5 bg-stone-700 hover:bg-stone-600 border-2 border-stone-600 hover:border-amber-400 text-amber-300 hover:text-amber-200 rounded-2xl transition flex items-center gap-1.5 text-xs font-bold shadow-md active:scale-95 cursor-pointer"
+          title="รายงานผลสำหรับผู้ปกครอง"
+          aria-label="รายงานผลสำหรับผู้ปกครอง"
+        >
+          <BarChart2 className="w-5 h-5 text-amber-400" />
+          <span className="hidden sm:inline">รายงานผล</span>
+        </button>
+
+        {/* EXP & STAR COUNTER */}
+        <div className="flex items-center gap-3 sm:gap-4 bg-stone-950 px-4 sm:px-5 py-2 rounded-2xl border-2 border-stone-700">
+          <div className="flex flex-col items-end">
+            <span className="text-xs font-black text-amber-400 flex items-center gap-1">
+              <Flame className="w-4 h-4 fill-amber-400 text-amber-400" /> LVL {level}
+            </span>
+            <div className="w-24 sm:w-32 h-3 bg-stone-800 rounded-full overflow-hidden mt-1 border border-stone-700">
+              <div
+                className="h-full bg-gradient-to-r from-emerald-400 to-lime-400 transition-all duration-500"
+                style={{ width: `${expProgress}%` }}
+              />
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-2 bg-emerald-500 px-3 py-1.5 rounded-xl border-b-4 border-emerald-700">
-          <span className="text-xl">💎</span>
-          <span className="text-xl font-black text-white drop-shadow">
-            {stars}
-          </span>
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-emerald-500 px-3 py-1 rounded-xl border-b-4 border-emerald-700">
+            <span className="text-lg sm:text-xl">💎</span>
+            <span className="text-lg sm:text-xl font-black text-white drop-shadow">
+              {stars}
+            </span>
+          </div>
         </div>
       </div>
     </header>
